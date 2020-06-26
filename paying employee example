@@ -1,0 +1,11 @@
+hours=int(input('enter hours:'))
+rate=int(input('enter rate:'))
+try:                                              
+  if(hours>40):
+    pay=int(hours*1.5*rate)
+    print('pay',pay)
+  else:
+    pay=hours*rate
+    print('pay',pay)
+except:                                                            #in order to gracefully end the program
+  print('error need numeric rate value')                           #print if the user enters inputs other than int
